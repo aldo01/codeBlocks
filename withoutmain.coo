@@ -1,0 +1,6 @@
+#include<stdio.h>
+#define fun() m##a##i##n
+ void fun(){
+   printf("geeksforgeeks");
+   return 0;
+ }
