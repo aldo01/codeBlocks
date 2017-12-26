@@ -1,14 +1,29 @@
 #include<stdio.h>
-
+int print1();
+int print2();
 int main(){
- int arr[]={1,2,3,4,5,6,7,8,9};
- int j=0;
- int num=5;
- num=8;
- printf("%d\n",sizeof(arr));
- for(j=0;j<9;j++){
-    printf("%d",*arr);
-    (*arr)++;
- }
+ char a[10]="hhh";
+ char b[10]="hhh";
+ if(a==b)
+   printf("nkfndknfk");
+
+   print1();
+   print1();
+   print2();
+   print2();
  return 0;
 }
+
+int print1(){
+ static int x=10;
+ x +=5;
+ printf("%d ",x);
+}
+
+int print2(){
+static int x;
+x=10;
+x+=5;
+printf("%d ",x);
+}
+
