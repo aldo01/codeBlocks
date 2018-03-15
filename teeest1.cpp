@@ -1,7 +1,12 @@
 #include<stdio.h>
-#include<conio.h>
+
+
 
 int main(void){
- printf("hello world");
+static int i;
+for(++i;++i;++i){
+  printf("%d",i);
+  if(i==4) break;
+}
  return 0;
 }
